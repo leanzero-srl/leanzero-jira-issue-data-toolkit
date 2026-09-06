@@ -1,0 +1,31 @@
+{
+  "jql": "project = ABC ORDER BY updated DESC",
+  "concurrency": {
+    "plan": 5,
+    "apply": 3
+  },
+  "fieldDenylist": [
+    "Sprint",
+    "Rank",
+    "Global Rank",
+    "Rank (Obsolete)",
+    "Global Rank (Obsolete)",
+    "Story Points",
+    "Development"
+  ],
+  "preferMigratedTarget": false,
+  "allowClearWhenDcEmpty": false,
+  "richTextOverwrite": "missing_only",
+  "recheckBeforeApply": true,
+  "enableTypes": [],
+  "muteNotifications": true,
+  "statusPaths": {
+    "Reopened->Closed": [
+      "Resolved",
+      "Closed"
+    ]
+  },
+  "statusRestore": {
+    "setResolutionFromDc": true
+  }
+}

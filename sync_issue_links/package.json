@@ -1,0 +1,16 @@
+{
+  "name": "sync-issue-links",
+  "version": "1.0.0",
+  "description": "Replicate issue-to-issue links from Jira Datacenter to Jira Cloud for already-migrated issues",
+  "main": "main/sync_issue_links.js",
+  "scripts": {
+    "start": "node main/sync_issue_links.js",
+    "dry-run": "node main/sync_issue_links.js --dry-run",
+    "plan-only": "node main/sync_issue_links.js --plan-only",
+    "resume": "node main/sync_issue_links.js --resume"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}

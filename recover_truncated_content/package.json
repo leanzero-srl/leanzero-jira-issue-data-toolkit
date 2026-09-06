@@ -1,0 +1,17 @@
+{
+  "name": "recover-truncated-content",
+  "version": "1.0.0",
+  "description": "Identify Cloud descriptions/comments truncated at 32,767 chars (JCMA cap), recover the full text from Data Center, and emit .docx files (optionally attaching them to the Cloud issue).",
+  "main": "main/recover_truncated_content.js",
+  "scripts": {
+    "start": "node main/recover_truncated_content.js",
+    "plan": "node main/recover_truncated_content.js",
+    "apply": "node main/recover_truncated_content.js --apply",
+    "dry-apply": "node main/recover_truncated_content.js --apply --dry-run"
+  },
+  "dependencies": {
+    "@turbodocx/html-to-docx": "^1.21.0",
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}

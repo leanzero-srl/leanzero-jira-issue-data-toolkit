@@ -1,0 +1,4 @@
+{
+  "_comment": "Per-field option-value remaps for when a DC select/multiselect value differs textually from the Cloud allowedValue. Shape: { \"<Field Name>\": { \"<dcValue>\": \"<cloudValue>\" } }. Matching is case-insensitive on the dcValue. Leave empty when DC and Cloud option labels are identical.",
+  "maps": {}
+}

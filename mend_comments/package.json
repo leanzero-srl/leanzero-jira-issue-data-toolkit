@@ -1,0 +1,17 @@
+{
+  "name": "mend-comments",
+  "version": "0.1.0",
+  "description": "Mend JCMA-migrated Cloud comments: collapse excessive semicolon runs to match DC source, and resolve @unknown mentions to proper Cloud accountIds via DC user email lookup. Comment bodies ONLY, never descriptions.",
+  "main": "main/mend_comments.js",
+  "scripts": {
+    "plan": "node main/mend_comments.js plan",
+    "audit": "node main/mend_comments.js audit",
+    "apply-dry": "node main/mend_comments.js apply --dry-run",
+    "apply": "node main/mend_comments.js apply --apply",
+    "notify-test": "node main/mend_comments.js notify-test"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}

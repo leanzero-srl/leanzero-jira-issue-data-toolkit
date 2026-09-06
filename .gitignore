@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Every script writes its plans, reports and backups locally — never commit them.
+logs/
+out/
+output/
+reports/
+backups/
+*.log
+*.out
+*.xlsx
+*.csv
+!**/config/*.csv
+
+.DS_Store

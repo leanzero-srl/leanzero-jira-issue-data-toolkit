@@ -1,0 +1,16 @@
+{
+  "name": "sync-issue-attachments",
+  "version": "1.0.0",
+  "description": "Re-sync missing attachments from Jira Datacenter to Jira Cloud for already-migrated issues",
+  "main": "main/sync_issue_attachments.js",
+  "scripts": {
+    "start": "node main/sync_issue_attachments.js",
+    "dry-run": "node main/sync_issue_attachments.js --dry-run",
+    "plan-only": "node main/sync_issue_attachments.js --plan-only",
+    "resume": "node main/sync_issue_attachments.js --resume"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}

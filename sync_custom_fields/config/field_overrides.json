@@ -1,0 +1,4 @@
+{
+  "_comment": "Pin ambiguous DC<->Cloud field mappings here. Each entry forces a specific DC source field id and Cloud target field id for a given field name. Add entries after reviewing reports/field_resolution_<runId>.md. 'name' is informational; 'cloudFieldId' is the resolution key.",
+  "overrides": []
+}

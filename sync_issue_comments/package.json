@@ -1,0 +1,17 @@
+{
+  "name": "sync-issue-comments",
+  "version": "0.1.0",
+  "description": "Inject missing DC Jira comments into Cloud for issues matching a JQL. Preserves JSM public/internal visibility 100% via the sd.public.comment property. Idempotent re-run via migration.dc_comment_id tag.",
+  "main": "main/sync_issue_comments.js",
+  "scripts": {
+    "plan": "node main/sync_issue_comments.js plan",
+    "audit": "node main/sync_issue_comments.js audit",
+    "apply-dry": "node main/sync_issue_comments.js apply --dry-run",
+    "apply": "node main/sync_issue_comments.js apply --apply",
+    "notify-test": "node main/sync_issue_comments.js notify-test"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}

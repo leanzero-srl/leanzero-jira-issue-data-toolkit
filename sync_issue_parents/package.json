@@ -1,0 +1,16 @@
+{
+  "name": "sync-issue-parents",
+  "version": "1.0.0",
+  "description": "Recover parent-child issue relationships from Jira Datacenter and restore them in Jira Cloud",
+  "main": "main/sync_issue_parents.js",
+  "scripts": {
+    "start": "node main/sync_issue_parents.js",
+    "dry-run": "node main/sync_issue_parents.js --dry-run",
+    "plan-only": "node main/sync_issue_parents.js --plan-only",
+    "resume": "node main/sync_issue_parents.js --resume"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}
