@@ -1,0 +1,43 @@
+{
+  "_comment": "EDIT THIS FOR YOUR INSTANCE. One entry per traffic-light field. Find the DC and Cloud ids with GET /rest/api/2/field and /rest/api/3/field. Create one value by hand in the Cloud UI and read it back over REST to get the exact shape string - do not guess it.",
+  "fields": [
+    {
+      "name": "Delivery Confidence",
+      "dcFieldId": "customfield_10001",
+      "cloudFieldId": "customfield_20001",
+      "options": [
+        {
+          "shape": "🔴⚪⚪",
+          "label": "Red"
+        },
+        {
+          "shape": "⚪🟠⚪",
+          "label": "Amber"
+        },
+        {
+          "shape": "⚪⚪🟢",
+          "label": "Green"
+        }
+      ]
+    },
+    {
+      "name": "Dependencies Complete",
+      "dcFieldId": "customfield_10002",
+      "cloudFieldId": "customfield_20002",
+      "options": [
+        {
+          "shape": "🔴⚪⚪",
+          "label": "Red"
+        },
+        {
+          "shape": "⚪🟡⚪",
+          "label": "Yellow"
+        },
+        {
+          "shape": "⚪⚪🟢",
+          "label": "Green"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "sync_custom_fields",
+  "version": "1.0.0",
+  "description": "Sync Jira custom-field values DC -> Cloud (DC is source of truth). Phased plan/audit/apply, schema-driven per-type translation, name-based field resolution.",
+  "main": "main/sync_custom_fields.js",
+  "scripts": {
+    "field-report": "node main/sync_custom_fields.js field-report",
+    "plan": "node main/sync_custom_fields.js plan",
+    "audit": "node main/sync_custom_fields.js audit",
+    "apply-dry": "node main/sync_custom_fields.js apply --dry-run",
+    "apply": "node main/sync_custom_fields.js apply --apply"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}

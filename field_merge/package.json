@@ -1,0 +1,39 @@
+{
+  "name": "jira-field-data-merger",
+  "version": "1.2.0",
+  "description": "A powerful Node.js script to copy/merge field data between fields in Jira Cloud",
+  "main": "merge_field_data.js",
+  "bin": {
+    "jira-field-merger": "./merge_field_data.js"
+  },
+  "scripts": {
+    "start": "node merge_field_data.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jira",
+    "field-migration",
+    "data-merge",
+    "atlassian",
+    "automation"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "files": [
+    "merge_field_data.js"
+  ]
+}

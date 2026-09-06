@@ -1,0 +1,10 @@
+{
+  "name": "sync_same_instance_fields",
+  "version": "1.0.0",
+  "description": "Sync custom-field values from (migrated) sources to targets on the same Jira Cloud instance",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "license": "Apache-2.0"
+}

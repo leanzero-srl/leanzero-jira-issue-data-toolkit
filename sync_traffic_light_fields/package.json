@@ -1,0 +1,16 @@
+{
+  "name": "sync-traffic-light-fields",
+  "version": "1.0.0",
+  "description": "Sync traffic light custom field data from Jira Datacenter to Jira Cloud",
+  "main": "main/sync_traffic_light_fields.js",
+  "scripts": {
+    "start": "node main/sync_traffic_light_fields.js",
+    "plan-only": "node main/sync_traffic_light_fields.js --plan-only",
+    "dry-run": "node main/sync_traffic_light_fields.js --dry-run",
+    "resume": "node main/sync_traffic_light_fields.js --resume"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}

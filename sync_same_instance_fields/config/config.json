@@ -1,0 +1,35 @@
+{
+  "jql": "(cf[10001] is not EMPTY OR cf[10002] is not EMPTY) ORDER BY updated DESC",
+  "concurrency": {
+    "plan": 5,
+    "apply": 3
+  },
+  "fieldPairs": [
+    {
+      "sourceName": "Approvers (migrated)",
+      "targetName": "Approvers"
+    },
+    {
+      "sourceName": "Start Date (migrated)",
+      "targetName": "Start date"
+    }
+  ],
+  "fieldDenylist": [
+    "Sprint",
+    "Rank",
+    "Global Rank",
+    "Rank (Obsolete)",
+    "Global Rank (Obsolete)",
+    "Story Points",
+    "Development",
+    "Team",
+    "Category",
+    "Impact level",
+    "Change category",
+    "Hold reason",
+    "Hold reason (migrated)"
+  ],
+  "richTextOverwrite": "missing_only",
+  "recheckBeforeApply": true,
+  "muteNotifications": true
+}

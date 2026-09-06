@@ -1,0 +1,16 @@
+{
+  "name": "sync-security-levels",
+  "version": "1.0.0",
+  "description": "Sync issue security levels from Jira Datacenter to Jira Cloud",
+  "main": "main/sync_security_levels.js",
+  "scripts": {
+    "start": "node main/sync_security_levels.js",
+    "plan-only": "node main/sync_security_levels.js --plan-only",
+    "dry-run": "node main/sync_security_levels.js --dry-run",
+    "resume": "node main/sync_security_levels.js --resume"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}
